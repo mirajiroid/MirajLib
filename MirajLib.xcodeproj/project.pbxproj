@@ -16,6 +16,7 @@
 		2658C879265232440077F04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2658C877265232440077F04D /* Main.storyboard */; };
 		2658C87B265232450077F04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2658C87A265232450077F04D /* Assets.xcassets */; };
 		2658C87E265232450077F04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2658C87C265232450077F04D /* LaunchScreen.storyboard */; };
+		2663E98C2652446F00A4EDE1 /* MirajLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2663E98B2652446F00A4EDE1 /* MirajLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		2658C87A265232450077F04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2658C87D265232450077F04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2658C87F265232450077F04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2663E98B2652446F00A4EDE1 /* MirajLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirajLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2658C850265231D70077F04D /* MirajLib.h */,
 				2658C851265231D70077F04D /* Info.plist */,
+				2663E98B2652446F00A4EDE1 /* MirajLib.swift */,
 			);
 			path = MirajLib;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					2658C84C265231D70077F04D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					2658C855265231D80077F04D = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2663E98C2652446F00A4EDE1 /* MirajLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		2658C862265231D80077F04D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -454,6 +460,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		2658C863265231D80077F04D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -486,6 +494,7 @@
 		2658C865265231D80077F04D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MirajLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -503,6 +512,7 @@
 		2658C866265231D80077F04D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MirajLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
