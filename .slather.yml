@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: MirajLib.xcodeproj
+scheme: MirajLib
+output_directory: reports
+ignore:
+  - MirajLibTests/*
