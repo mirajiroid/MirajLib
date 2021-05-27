@@ -1,10 +1,10 @@
 language: objective-c
 
-osx_image: xcode12.4
+osx_image: xcode12.5
 env:
   matrix:
-    - TEST_SDK=iphonesimulator14.4 OS=14.5 NAME='iPhone 12 Pro Max'
-    - TEST_SDK=iphonesimulator14.4 OS=14.5 NAME='iPhone 8'
+    - TEST_SDK=iphonesimulator14.5 OS=14.5 NAME='iPhone 12 Pro Max'
+    - TEST_SDK=iphonesimulator14.5 OS=14.5 NAME='iPhone 8'
 
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project MirajLib.xcodeproj -scheme MirajLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
